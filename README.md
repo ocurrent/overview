@@ -29,6 +29,12 @@ For example, the pipeline shown above fetches the head of a GitHub repository's 
 builds it, runs the tests, and deploys the binary if the tests pass.
 OCurrent pipelines are self-adjusting, so when the branch is updated, the pipeline will update automatically.
 
+For more information on OCurrent, see:
+
+- The [OCurrent wiki][] -- the official documentation
+- [ocurrent-skeleton][] -- a template pipeline you can clone
+- [CI/CD Pipelines: Monad, Arrow or Dart?][darts] -- background on OCurrent's design
+
 ## Docker images
 
 The [docker-base-images][] service periodically builds Docker images for various Linux distributions,
@@ -139,6 +145,8 @@ branch to a staging location for testing changes to the web UI:
 
 The services are mostly running under Docker SwarmKit, and are updated using OCurrent's Docker plugin.
 
+There are deployer instances at <https://deploy.ocamllabs.io/> and <https://deploy.ci3.ocamllabs.io/>.
+
 ## Monitoring
 
 Services export metrics using the [prometheus][] library, which are collected in a Prometheus service
@@ -154,13 +162,16 @@ and displayed using [grafana][].
 [opam-repository]: https://github.com/ocaml/opam-repository
 [docker-base-images]: https://github.com/ocurrent/docker-base-images
 [ocaml/opam]: https://hub.docker.com/r/ocaml/opam/tags
-[opam-health-check]: https://github.com/kit-ty-kate/opam-health-check
+[opam-health-check]: https://github.com/ocurrent/opam-health-check
 [OCluster]: https://github.com/ocurrent/ocluster
 [OBuilder]: https://github.com/ocurrent/obuilder
 [OCurrent]: https://github.com/ocurrent/ocurrent
+[OCurrent wiki]: https://github.com/ocurrent/ocurrent/wiki
+[ocurrent-skeleton]: https://github.com/ocurrent/ocurrent-skeleton
 [ocurrent-deployer]: https://github.com/ocurrent/ocurrent-deployer
 [Cap'n Proto RPC]: https://github.com/mirage/capnp-rpc
 [citty]: https://github.com/ocurrent/citty
 [dune-release]: https://github.com/ocamllabs/dune-release
 [prometheus]: https://github.com/mirage/prometheus
 [grafana]: https://grafana.com/
+[darts]: https://roscidus.com/blog/blog/2019/11/14/cicd-pipelines/
