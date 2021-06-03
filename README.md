@@ -8,6 +8,7 @@ The services described here are:
 - [opam-repo-ci][] -- CI for package submissions to [opam-repository][]
 - [ocurrent-deployer][] -- builds and deploys the above services (and itself)
 - [opam-health-check][] -- the opam-repository health checks at <http://check.ocamllabs.io/>
+- [current-bench][] -- Continuous benchmarks for OCaml projects
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
 build cluster, which has builders for x86, ARM and PowerPC architectures.
@@ -156,6 +157,13 @@ and displayed using [grafana][].
   <img src="images/grafana-ocluster.png"/>
 </p>
 
+## Benchmarking
+An OCaml project can enable [current-bench][] on its GitHub repository. The repository needs to have a Makefile target named `bench`
+since that is triggered inside the ocurrent pipeline in [current-bench][]. The repository also needs to emit the benchmarks in a JSON format so that they can be displayed on the [frontend](http://autumn.ocamllabs.io).
+
+<p align='center'>
+<img src="images/current-bench.png"/>
+</p>
 
 [ocaml-ci]: https://github.com/ocurrent/ocaml-ci
 [opam-repo-ci]:https://github.com/ocurrent/opam-repo-ci
@@ -175,3 +183,4 @@ and displayed using [grafana][].
 [prometheus]: https://github.com/mirage/prometheus
 [grafana]: https://grafana.com/
 [darts]: https://roscidus.com/blog/blog/2019/11/14/cicd-pipelines/
+[current-bench]: https://github.com/ocurrent/current-bench
