@@ -62,7 +62,7 @@ and (because Debian 10 is the latest version of Debian at the moment) `ocaml/opa
 
 The other services use these images for testing OCaml projects on the various platforms.
 
-The service is running at <https://base-images.ocamllabs.io/>, although users do not generally need to interact with it directly.
+The service is running at <https://images.ci.ocaml.org/>, although users do not generally need to interact with it directly.
 
 ## Testing OCaml projects under development
 
