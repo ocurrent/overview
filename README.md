@@ -7,8 +7,9 @@ The services described here are:
 - [ocaml-ci][] -- CI for OCaml projects
 - [opam-repo-ci][] -- CI for package submissions to [opam-repository][]
 - [ocurrent-deployer][] -- builds and deploys the above services (and itself)
-- [opam-health-check][] -- the opam-repository health checks at <http://check.ocamllabs.io/>
+- [opam-health-check][] -- the opam-repository health checks at [check.ocamllabs.io][]
 - [current-bench][] -- Continuous benchmarks for OCaml projects
+- [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
 build cluster, which has builders for x86, ARM and PowerPC architectures.
@@ -184,3 +185,6 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [grafana]: https://grafana.com/
 [darts]: https://roscidus.com/blog/blog/2019/11/14/cicd-pipelines/
 [current-bench]: https://github.com/ocurrent/current-bench
+[ocaml-multicore-ci]: https://github.com/ocurrent/ocaml-multicore-ci
+[check.ocamllabs.io]: http://check.ocamllabs.io
+[multicore.ci.ocamllabs.io]: https://multicore.ci.ocamllabs.io
