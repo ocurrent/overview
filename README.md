@@ -3,8 +3,8 @@
 There are a number of services providing CI for the OCaml community.
 The services described here are:
 
-- [docker-base-images][] -- builds the [ocaml/opam][] images on Docker Hub, which are used for CI
-- [ocaml-ci][] -- CI for OCaml projects
+- [docker-base-images][] -- builds the [ocaml/opam][] images on Docker Hub, which are used for CI at [images.ci.ocaml.org][]
+- [ocaml-ci][] -- CI for OCaml projects at [ci.ocamllabs.io][]
 - [opam-repo-ci][] -- CI for package submissions to [opam-repository][]
 - [ocurrent-deployer][] -- builds and deploys the above services (and itself)
 - [opam-health-check][] -- the opam-repository health checks at [check.ocamllabs.io][]
@@ -188,3 +188,5 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [ocaml-multicore-ci]: https://github.com/ocurrent/ocaml-multicore-ci
 [check.ocamllabs.io]: http://check.ocamllabs.io
 [multicore.ci.ocamllabs.io]: https://multicore.ci.ocamllabs.io
+[ci.ocamllabs.io]: https://ci.ocamllabs.io
+[images.ci.ocaml.org]: https://images.ci.ocaml.org
