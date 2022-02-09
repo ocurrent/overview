@@ -10,6 +10,7 @@ The services described here are:
 - [opam-health-check][] -- the opam-repository health checks at [check.ocamllabs.io][]
 - [current-bench][] -- Continuous benchmarks for OCaml projects
 - [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
+- [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][]
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
 build cluster, which has builders for x86, ARM and PowerPC architectures.
@@ -117,6 +118,11 @@ The running service can be found at <https://opam.ci.ocaml.org/github/ocaml/opam
   <img src="images/opam-repo-ci.png"/>
 </p>
 
+### Publishing documentation
+
+After publishing a package to [opam-repository][], the [ocaml-docs-ci][] pipeline picks up the changes and begins
+building the documentation for the package. This allows for correct linking across a package's dependencies. The documentation is then viewable on the new [OCaml website](https://v3.ocaml.org/packages).
+
 ## Checking the health of opam-repository
 
 Once a release has been accepted into opam-repository, [opam-health-check][] is run periodically to check
@@ -190,3 +196,4 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [multicore.ci.ocamllabs.io]: https://multicore.ci.ocamllabs.io
 [ci.ocamllabs.io]: https://ci.ocamllabs.io
 [images.ci.ocaml.org]: https://images.ci.ocaml.org
+[ocaml-docs-ci]: https://github.com/ocurrent/ocaml-docs-ci
