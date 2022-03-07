@@ -6,11 +6,11 @@ The services described here are:
 - [docker-base-images][] -- builds the [ocaml/opam][] images on Docker Hub, which are used for CI at [images.ci.ocaml.org][]
 - [ocaml-ci][] -- CI for OCaml projects at [ci.ocamllabs.io][]
 - [opam-repo-ci][] -- CI for package submissions to [opam-repository][]
-- [ocurrent-deployer][] -- builds and deploys the above services (and itself)
+- [ocurrent-deployer][] -- builds and deploys the above services (and itself) [deploy.ci3.ocamllabs.io][] or [deploy.ci.ocaml.org][]
 - [opam-health-check][] -- the opam-repository health checks at [check.ocamllabs.io][]
-- [current-bench][] -- Continuous benchmarks for OCaml projects
+- [current-bench][] -- Continuous benchmarks for OCaml projects at [autumn.ocamllabs.io][]
 - [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
-- [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][]
+- [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
 build cluster, which has builders for x86, ARM and PowerPC architectures.
@@ -197,3 +197,7 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [ci.ocamllabs.io]: https://ci.ocamllabs.io
 [images.ci.ocaml.org]: https://images.ci.ocaml.org
 [ocaml-docs-ci]: https://github.com/ocurrent/ocaml-docs-ci
+[docs.ci.ocaml.org]: https://docs.ci.ocaml.org
+[autumn.ocamllabs.io]: https://autumn.ocamllabs.io
+[deploy.ci3.ocamllabs.io]: https://deploy.ci3.ocamllabs.io
+[deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
