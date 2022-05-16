@@ -11,6 +11,7 @@ The services described here are:
 - [current-bench][] -- Continuous benchmarks for OCaml projects at [autumn.ocamllabs.io][]
 - [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
+- [tezos-ci][] -- A translation of Tezos' Gitlab CI to an OCurrent world.
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
 build cluster, which has builders for x86, ARM and PowerPC architectures.
@@ -201,3 +202,4 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [autumn.ocamllabs.io]: https://autumn.ocamllabs.io
 [deploy.ci3.ocamllabs.io]: https://deploy.ci3.ocamllabs.io
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
+[tezos-ci]: https://github.com/tarides/tezos-ci
