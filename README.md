@@ -11,6 +11,7 @@ The services described here are:
 - [current-bench][] -- Continuous benchmarks for OCaml projects at [autumn.ocamllabs.io][]
 - [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
+- [ocurrent.org][] -- Continuous documentation deployement for `ocurrent` packages at [watcher.ocamllabs.io][]
 - [tezos-ci][] -- A translation of Tezos' Gitlab CI to an OCurrent world.
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
@@ -124,6 +125,14 @@ The running service can be found at <https://opam.ci.ocaml.org/github/ocaml/opam
 After publishing a package to [opam-repository][], the [ocaml-docs-ci][] pipeline picks up the changes and begins
 building the documentation for the package. This allows for correct linking across a package's dependencies. The documentation is then viewable on the new [OCaml website](https://v3.ocaml.org/packages).
 
+## Tracking documentation over OCurrent repositories
+
+The documentation of the OCurrent projects is split across multiple repositories, which sometimes makes it a bit hard to follow. To address this problem, the ocurrent watcher exists. Its purpose is to aggregate data, build them with GoHugo and push it to the right place: the [ocurrent.org][] website. To ensure everything is up to date, it tries to rebuild the data weekly.
+
+<p align='center'>
+    <img src="images/ocurrentorg.png" />
+</p>
+
 ## Checking the health of opam-repository
 
 Once a release has been accepted into opam-repository, [opam-health-check][] is run periodically to check
@@ -203,3 +212,5 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [deploy.ci3.ocamllabs.io]: https://deploy.ci3.ocamllabs.io
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
 [tezos-ci]: https://github.com/tarides/tezos-ci
+[ocurrent.org]: https://ocurrent.org
+[watcher.ocamllabs.io]: https://watcher.ocamllabs.io
