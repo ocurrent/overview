@@ -11,7 +11,7 @@ The services described here are:
 - [current-bench][] -- Continuous benchmarks for OCaml projects at [autumn.ocamllabs.io][]
 - [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
-- [ocurrent.org][] -- Continuous documentation deployement for `ocurrent` packages at [watcher.ocamllabs.io][]
+- [ocurrent.org][] -- Continuous documentation deployment for `ocurrent` packages at [watcher.ocamllabs.io][]
 - [tezos-ci][] -- A translation of Tezos' Gitlab CI to an OCurrent world.
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
