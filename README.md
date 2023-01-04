@@ -12,6 +12,7 @@ The services described here are:
 - [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
 - [ocurrent.org][] -- Continuous documentation deployment for `ocurrent` packages at [watcher.ocamllabs.io][]
+- [tezos-ci][] (_unmaintained_) -- A translation of Tezos' Gitlab CI to an OCurrent world.
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
 build cluster, which has builders for x86, ARM and PowerPC architectures.
@@ -212,3 +213,4 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
 [ocurrent.org]: https://ocurrent.org
 [watcher.ocamllabs.io]: https://watcher.ocamllabs.io
+[tezos-ci]: https://github.com/tarides/tezos-ci
