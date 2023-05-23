@@ -215,5 +215,5 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
 [ocurrent.org]: https://ocurrent.org
 [watcher.ocamllabs.io]: https://watcher.ocamllabs.io
-[observer.ocamllabs.io]: https://observer.ocamllabs.io
+[observer.ocamllabs.io]: http://observer.ocamllabs.io
 [tezos-ci]: https://github.com/tarides/tezos-ci
