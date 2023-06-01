@@ -4,14 +4,14 @@ There are a number of services providing CI for the OCaml community.
 The services described here are:
 
 - [docker-base-images][] -- builds the [ocaml/opam][] images on Docker Hub, which are used for CI at [images.ci.ocaml.org][]
-- [ocaml-ci][] -- CI for OCaml projects at [ci.ocamllabs.io][]
+- [ocaml-ci][] -- CI for OCaml projects at [ocaml.ci.dev][]
 - [opam-repo-ci][] -- CI for package submissions to [opam-repository][]
-- [ocurrent-deployer][] -- builds and deploys the above services (and itself) [deploy.ci3.ocamllabs.io][] or [deploy.ci.ocaml.org][]
-- [opam-health-check][] -- the opam-repository health checks at [check.ocamllabs.io][]
+- [ocurrent-deployer][] -- builds and deploys the above services (and itself) [deploy.ci.dev][] or [deploy.ci.ocaml.org][] or [deploy.mirage.io][]
+- [opam-health-check][] -- the opam-repository health checks at [check.ci.ocaml.org][]
 - [current-bench][] -- Continuous benchmarks for OCaml projects at [autumn.ocamllabs.io][]
 - [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
-- [ocurrent.org][] -- Continuous documentation deployment for `ocurrent` packages at [watcher.ocamllabs.io][]
+- [ocurrent.org][] -- Continuous documentation deployment for `ocurrent` packages at [watcher.ci.dev][]
 - [ocurrent-observer][] -- DIG/CURL tool to monitoring DNS, SSL Certificates and HTTPS services [observer.ocamllabs.io][]
 - [tezos-ci][] (_unmaintained_) -- A translation of Tezos' Gitlab CI to an OCurrent world.
 
@@ -79,7 +79,7 @@ ocaml-ci aims to find problems in the software before it is released.
 
 The CI engine provides a Cap'n Proto API, which is used to provide various user-interfaces:
 
-- A web front-end, at <https://ci.ocamllabs.io/>
+- A web front-end, at <https://ocaml.ci.dev/>
 - A command-line interface (e.g. `ocaml-ci mirage/irmin refs/heads/master alpine-3.12-4.11 log` to show the log of the last build of the Irmin project's master branch on Alpine 3.12 with OCaml 4.11).
 - [citty][], an interactive console application.
 
@@ -144,7 +144,7 @@ It is also used when preparing a large change (such as making a new release of t
   <img src="images/opam-health-check.png"/>
 </p>
 
-The results of the latest run can be seen at <http://check.ocamllabs.io/>.
+The results of the latest run can be seen at <https://check.ci.ocaml.org/>.
 
 ## Updating services with the deployer
 
@@ -164,7 +164,7 @@ branch to a staging location for testing changes to the web UI:
 
 The services are mostly running under Docker SwarmKit, and are updated using OCurrent's Docker plugin.
 
-There are deployer instances at <https://deploy.ocamllabs.io/> and <https://deploy.ci3.ocamllabs.io/>.
+There are deployer instances at <https://deploy.ci.dev/> and <https://deploy.ci.ocaml.org/>.
 
 ## Monitoring
 
@@ -211,9 +211,9 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [ocaml-docs-ci]: https://github.com/ocurrent/ocaml-docs-ci
 [docs.ci.ocaml.org]: https://docs.ci.ocaml.org
 [autumn.ocamllabs.io]: https://autumn.ocamllabs.io
-[deploy.ci3.ocamllabs.io]: https://deploy.ci3.ocamllabs.io
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
+[deploy.ci.dev]: https://deploy.ci.dev
 [ocurrent.org]: https://ocurrent.org
-[watcher.ocamllabs.io]: https://watcher.ocamllabs.io
+[watcher.ci.dev]: https://watcher.ci.dev
 [observer.ocamllabs.io]: http://observer.ocamllabs.io
 [tezos-ci]: https://github.com/tarides/tezos-ci
