@@ -13,10 +13,11 @@ The services described here are:
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
 - [ocurrent.org][] -- Continuous documentation deployment for `ocurrent` packages at [watcher.ci.dev][]
 - [ocurrent-observer][] -- DIG/CURL tool to monitoring DNS, SSL Certificates and HTTPS services [observer.ocamllabs.io][]
+- [multicoretests-ci][] -- Multi-platform CI for the OCaml compiler [ocurrent/multicoretests-ci][]
 - [tezos-ci][] (_unmaintained_) -- A translation of Tezos' Gitlab CI to an OCurrent world.
 
 Most of the services are [OCurrent][] pipelines, and all submit jobs to an [OCluster][]
-build cluster, which has builders for x86, ARM and PowerPC architectures.
+build cluster, which has builders for x86, ARM, s390x, RiscV and PowerPC architectures.
 Each cluster builder uses [OBuilder][] to run the build jobs.
 The various services communicate using [Cap'n Proto RPC][].
 
@@ -218,3 +219,5 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [watcher.ci.dev]: https://watcher.ci.dev
 [observer.ocamllabs.io]: http://observer.ocamllabs.io
 [tezos-ci]: https://github.com/tarides/tezos-ci
+[multicoretests-ci]: https://ocaml-multicoretests.ci.dev:8100/
+[ocurrent/multicoretests-ci]: https://github.com/ocurrent/multicoretests-ci
