@@ -213,6 +213,7 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [autumn.ocamllabs.io]: https://autumn.ocamllabs.io
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
 [deploy.ci.dev]: https://deploy.ci.dev
+[ocaml.ci.dev]: https://ocaml.ci.dev
 [ocurrent.org]: https://ocurrent.org
 [watcher.ci.dev]: https://watcher.ci.dev
 [observer.ocamllabs.io]: http://observer.ocamllabs.io
