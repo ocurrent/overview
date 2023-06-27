@@ -204,15 +204,15 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [darts]: https://roscidus.com/blog/blog/2019/11/14/cicd-pipelines/
 [current-bench]: https://github.com/ocurrent/current-bench
 [ocaml-multicore-ci]: https://github.com/ocurrent/ocaml-multicore-ci
-[check.ocamllabs.io]: http://check.ocamllabs.io
+[check.ci.ocaml.org]: http://check.ci.ocaml.org
 [multicore.ci.ocamllabs.io]: https://multicore.ci.ocamllabs.io
-[ci.ocamllabs.io]: https://ci.ocamllabs.io
 [images.ci.ocaml.org]: https://images.ci.ocaml.org
 [ocaml-docs-ci]: https://github.com/ocurrent/ocaml-docs-ci
 [docs.ci.ocaml.org]: https://docs.ci.ocaml.org
 [autumn.ocamllabs.io]: https://autumn.ocamllabs.io
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
 [deploy.ci.dev]: https://deploy.ci.dev
+[deploy.mirage.io]: https://deploy.mirage.io
 [ocaml.ci.dev]: https://ocaml.ci.dev
 [ocurrent.org]: https://ocurrent.org
 [watcher.ci.dev]: https://watcher.ci.dev
