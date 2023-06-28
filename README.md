@@ -13,7 +13,7 @@ The services described here are:
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
 - [ocurrent.org][] -- Continuous documentation deployment for `ocurrent` packages at [watcher.ci.dev][]
 - [ocurrent-observer][] -- DIG/CURL tool to monitoring DNS, SSL Certificates and HTTPS services [observer.ocamllabs.io][]
-- [multicoretests-ci][] -- Multi-platform CI for the OCaml compiler [ocurrent/multicoretests-ci][]
+- [multicoretests-ci][] -- CI for the [ocaml-multicore/multicoretests][] test suite at [ocaml-multicoretests.ci.dev][]
 - [mirage-ci][] - CI for MirageOS [ocurrent/mirage-ci][]
 - [tezos-ci][] (_unmaintained_) -- A translation of Tezos' Gitlab CI to an OCurrent world.
 
@@ -222,5 +222,6 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [ocurrent/mirage-ci]: https://github.com/ocurrent/mirage-ci
 [observer.ocamllabs.io]: http://observer.ocamllabs.io
 [tezos-ci]: https://github.com/tarides/tezos-ci
-[multicoretests-ci]: https://ocaml-multicoretests.ci.dev:8100/
-[ocurrent/multicoretests-ci]: https://github.com/ocurrent/multicoretests-ci
+[ocaml-multicoretests.ci.dev]: https://ocaml-multicoretests.ci.dev:8100/
+[multicoretests-ci]: https://github.com/ocurrent/multicoretests-ci
+[ocaml-multicore/multicoretests]: https://github.com/ocaml-multicore/multicoretests
