@@ -8,8 +8,8 @@ The services described here are:
 - [opam-repo-ci][] -- CI for package submissions to [opam-repository][]
 - [ocurrent-deployer][] -- builds and deploys the above services (and itself) [deploy.ci.dev][] or [deploy.ci.ocaml.org][] or [deploy.mirage.io][]
 - [opam-health-check][] -- the opam-repository health checks at [check.ci.ocaml.org][]
-- [current-bench][] -- Continuous benchmarks for OCaml projects at [autumn.ocamllabs.io][]
-- [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [multicore.ci.ocamllabs.io][]
+- [current-bench][] -- Continuous benchmarks for OCaml projects at [bench.ci.dev][]
+- [ocaml-multicore-ci][] -- CI for multicore OCaml projects at [ocaml-multicore.ci.dev][]
 - [ocaml-docs-ci][] -- Continuous documentation building for packages in [opam-repository][] at [docs.ci.ocaml.org][]
 - [ocurrent.org][] -- Continuous documentation deployment for `ocurrent` packages at [watcher.ci.dev][]
 - [ocurrent-observer][] -- DIG/CURL tool to monitoring DNS, SSL Certificates and HTTPS services [observer.ocamllabs.io][]
@@ -179,7 +179,7 @@ and displayed using [grafana][].
 
 ## Benchmarking
 An OCaml project can enable [current-bench][] on its GitHub repository. The repository needs to have a Makefile target named `bench`
-since that is triggered inside the ocurrent pipeline in [current-bench][]. The repository also needs to emit the benchmarks in a JSON format so that they can be displayed on the [frontend](http://autumn.ocamllabs.io).
+since that is triggered inside the ocurrent pipeline in [current-bench][]. The repository also needs to emit the benchmarks in a JSON format so that they can be displayed on the [frontend](http://bench.ci.dev).
 
 <p align='center'>
 <img src="images/current-bench.png"/>
@@ -207,11 +207,11 @@ since that is triggered inside the ocurrent pipeline in [current-bench][]. The r
 [current-bench]: https://github.com/ocurrent/current-bench
 [ocaml-multicore-ci]: https://github.com/ocurrent/ocaml-multicore-ci
 [check.ci.ocaml.org]: http://check.ci.ocaml.org
-[multicore.ci.ocamllabs.io]: https://multicore.ci.ocamllabs.io
+[ocaml-multicore.ci.dev]: https://ocaml-multicore.ci.dev/
 [images.ci.ocaml.org]: https://images.ci.ocaml.org
 [ocaml-docs-ci]: https://github.com/ocurrent/ocaml-docs-ci
 [docs.ci.ocaml.org]: https://docs.ci.ocaml.org
-[autumn.ocamllabs.io]: https://autumn.ocamllabs.io
+[bench.ci.dev]: https://bench.ci.dev
 [deploy.ci.ocaml.org]: https://deploy.ci.ocaml.org
 [deploy.ci.dev]: https://deploy.ci.dev
 [deploy.mirage.io]: https://deploy.mirage.io
